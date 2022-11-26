@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+.hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.657);
+    content: "";
+}
+.content-bottom-card {
+    position: absolute;
+    left: 23%;
+    bottom: -85%;
+    transition: all ease-in-out 0.8s;
+    width: 1000px;
+    z-index: 1;
+}
+
+.card-row {
+    position: relative;
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 50px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn-area {
+    position: absolute;
+    left: 5%;
+    bottom: 50px;
+}
+.content-bottom-card-two {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    bottom: -100%;
+    transition: all ease-in-out 0.8s;
+    z-index: 2;
+}
+.active {
+    bottom: -10%;
+    transition: all ease-in-out 0.8s;
+}
+.active-two {
+    bottom: -13%;
+    transition: all ease-in-out 0.8s;
+}
+
+.hero-slider {
+    position: relative;
+}
+.hero-slider .swiper-slide {
+    position: relative;
+}
+.hero-slider .swiper-slide::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.68);
+}
+.hero-slider .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slider .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-slider .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.btn-area button {
+    position: relative;
+    z-index: 9888;
+}
