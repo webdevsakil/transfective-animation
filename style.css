@@ -37,9 +37,13 @@ header {
     left: 0%;
     width: 100%;
     z-index: 23;
- 
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
-.main-area .container{
+section {
+    scroll-snap-align: start;
+}
+.main-area .container {
     padding-right: 0px !important;
 }
 .background-slider .swiper-slide {
@@ -159,6 +163,21 @@ h2 {
 .blog-area {
     transform: translateY(-125px);
 }
-.blog-area .section-title{
+.blog-area .section-title {
     margin-top: 150px;
+}
+.panel {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.458);
+}
+
+.contents-wrapper {
+    scroll-snap-type: y mandatory;
+   
+}
+.contents-wrapper .panel {
+    scroll-snap-align: start;
 }
