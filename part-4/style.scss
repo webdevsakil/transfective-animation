@@ -1,0 +1,138 @@
+.hero-area {
+    position: relative;
+    min-height: 100vh;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        width: 30%;
+        height: 100%;
+        content: "";
+        background-color: #000;
+    }
+
+    .left-sidebar {
+        position: relative;
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .logo-area {
+            a {
+                display: block;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .slider-counter {
+
+        span {
+            display: block;
+            writing-mode: sideways-lr;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.518);
+
+            &:nth-child(2) {
+                height: 130px;
+                width: 4px;
+                background: rgba(128, 128, 128, 0.462);
+                margin-left: 8px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background: #222;
+                    content: "";
+                    animation-name: progress;
+                    animation-duration: 1500ms;
+                    animation-iteration-count: 5;
+                }
+            }
+        }
+    }
+
+    .nav-area {
+        ul {
+            li {
+                a {
+                    color: rgba(255, 255, 255, 0.766);
+                    text-transform: uppercase;
+                    display: block;
+                    margin-right: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+.left-area {
+    position: relative;
+
+    .img-area {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
+
+        .img-wrapper {
+
+            position: relative;
+            width: 440px;
+            height: 440px;
+            // overflow: hidden;
+
+            img {
+                width: 440px;
+                height: 440px;
+                border-radius: 5px;
+            }
+
+            ul {
+                li {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    &.active{
+                        z-index: 2;
+                    }
+                }
+            }
+
+            // &::before {
+
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     content: "";
+            //     border-radius: 5px;
+            //     background: rgba(0, 0, 0, 0.702);
+            // }
+        }
+    }
+}
+
+@keyframes progress {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
