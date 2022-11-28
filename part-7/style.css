@@ -1,0 +1,117 @@
+.hero-area {
+  margin-top: 100px;
+}
+.hero-area .single-slide {
+  min-height: 70vh;
+}
+.hero-area .logo-area a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  text-transform: capitalize;
+}
+.hero-area .menu-btn button {
+  background: transparent;
+  border: none;
+}
+.hero-area .counter-area {
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+}
+.hero-area .counter-area .start-count, .hero-area .counter-area .end-count {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+.hero-area .counter-area .progress-line {
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: rgba(34, 34, 34, 0.762);
+}
+.hero-area .counter-area span {
+  margin: 0px 5px;
+}
+.hero-area .slider-content {
+  margin-top: 80px;
+  padding-right: 50px;
+}
+.hero-area .slider-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.hero-area .slider-content p {
+  color: rgba(34, 34, 34, 0.742);
+}
+.hero-area .arrow-area {
+  margin-top: 100px;
+}
+.hero-area .arrow-area button {
+  background: transparent;
+  border: 1px solid rgba(34, 34, 34, 0.302);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: rgba(34, 34, 34, 0.542);
+}
+.hero-area .center-img img {
+  height: 700px;
+}
+
+.right-area {
+  height: 70vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.right-area .square-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-area .square-card:nth-child(1) {
+  background-color: #b3a894;
+}
+.right-area .square-card img {
+  width: 200px;
+}
+.right-area .square-card h3 {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+.right-area .square-card p {
+  font-size: 26px;
+  line-height: 38px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.right-area .square-card span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+.hero-container {
+  position: relative;
+}
+.hero-container .nav-area {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 100%;
+}
+.hero-container .arrow-area {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+.hero-container .arrow-area button {
+  position: relative;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */

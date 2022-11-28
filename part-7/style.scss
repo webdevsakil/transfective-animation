@@ -1,0 +1,125 @@
+
+.hero-area{
+    margin-top: 100px;
+    .single-slide{
+        min-height: 70vh;
+    }
+    .logo-area{
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            text-transform: capitalize;
+        }
+    }
+    .menu-btn{
+        button{
+            background: transparent;
+            border: none;
+        }
+    }
+
+    .counter-area{
+        display: flex;
+        align-items: center;
+        margin-top: 180px;
+        .start-count,.end-count{
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+        }
+        .progress-line{
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: rgba(34, 34, 34, 0.762);
+        }
+        span{
+            margin: 0px 5px;
+        }
+    }
+    .slider-content{
+        margin-top: 80px;
+        padding-right: 50px;
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        p{
+            color: rgba(34, 34, 34, 0.742);
+        }
+    }
+    .arrow-area{
+        margin-top: 100px;
+        button{
+            background: transparent;
+            border: 1px solid rgba(34, 34, 34, 0.302);
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            color: rgba(34, 34, 34, 0.542);
+        }
+    }
+    .center-img{
+        img{
+            height: 700px;
+        }
+    }
+}
+
+.right-area{
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    .square-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(1){
+            background-color: #b3a894;
+        }
+        img{
+            width: 200px;
+        }
+        h3{
+            margin-top: 40px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 26px;
+            line-height: 38px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        span{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 40px;
+        }
+    }
+}
+
+.hero-container{
+    position: relative;
+    .nav-area{
+        position: absolute;
+        top: 40px;
+        left: 70px;
+        width: 100%;
+    }
+    .arrow-area{
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        button{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
